@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+        <p>
+          Preencha o formulário abaixo para <br />
+          agendar a sua mentoria
+        </p>
+      </header>
+
+      <form id="may-form">
+        <div class="camposForm">
+          <fieldset>
+            <div class="fieldset-campos">
+              <legend>Informações pessoais</legend>
+              <div class="camposinput">
+                <div class="nameSobrename">
+                  <label for="name"
+                    >Nome:
+                    <input required type="text" id="name" />
+                  </label>
+                  <div class="camposinput">
+                    <label for="sobrenome"
+                      >Sobrenome:
+                      <input type="text" id="sobrenome" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="camposinput">
+                  <label for="e-mail"
+                    >E-mail <span>(digite um e-mail válido)</span></label
+                  >
+                  <input required type="email" id="e-mail" />
+                </div>
+
+                <div class="camposinput">
+                  <label for="password"
+                    >Senha <span>(minimo 6 caracteres)</span></label
+                  >
+                  <input required minlength="6" type="password" id="password" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="fieldset-campos">
+              <legend>Informações do Mentor</legend>
+              <div class="camposinput">
+                <label for="name"
+                  >Nome do seu mentor <span>(só o primeiro nome)</span></label
+                >
+                <input type="text" id="name" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="fieldset-campos">
+              <legend>Seus Horários disponíveis</legend>
+              <div class="mentorias">
+                <p>Primeira Mentoria</p>
+                <div class="col-3">
+                  <div class="input-date">
+                    <label for="date" id="date">Data</label>
+                    <input required type="date" id="date" />
+                  </div>
+
+                  <div class="input-date">
+                    <label for="" id="event-begin">Das</label>
+                    <input required type="time" name="link" id="event-begin" />
+                  </div>
+
+                  <div class="input-date">
+                    <label for="" id="envet-end">Até</label>
+                    <input required type="time" name="" id="envet-end" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mentorias">
+                <p>Segunda Mentoria</p>
+                <div class="col-3">
+                  <div class="input-date">
+                    <label for="date" id="date">Data</label>
+                    <input required type="date" id="date" />
+                  </div>
+
+                  <div class="input-date">
+                    <label for="" id="event-begin">Das</label>
+                    <input required type="time" name="link" id="event-begin" />
+                  </div>
+
+                  <div class="input-date">
+                    <label for="" id="envet-end">Até</label>
+                    <input required type="time" name="" id="envet-end" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+      <footer>
+        <button form="may-form">Salvar</button>
+      </footer>
+    </div>
+  </body>
+</html>
